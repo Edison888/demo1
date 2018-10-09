@@ -36,6 +36,11 @@
             window.location = uri.toString();
         }
     })
+
+
+    io().on('connect', function() {
+        console.log("连接成功");
+    });
 </script>
 </body>
 </html>
